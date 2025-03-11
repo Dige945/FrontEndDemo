@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.el-menu--horizontal {
+    --el-menu-horizontal-height: 100px;
+}
+.Header{
+    height: 0px;
+}
+.body{
+    margin: 0px;
+}
+.Home{
+    margin-right: 10px;
+}
