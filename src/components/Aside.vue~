@@ -1,0 +1,38 @@
+
+<!-- 左边的导航栏 -->
+
+<template>
+  <el-menu
+      style="width: 200px;min-height: calc(100vh - 60px)"
+      router
+      :default-active="$route.path"
+      class="el-menu-vertical-demo">
+    <el-menu-item index="/">
+      <el-icon><IconMenu /></el-icon>
+      <span>人员数据管理</span>
+    </el-menu-item>
+    <el-menu-item index="/Chat" >
+      <el-icon><document /></el-icon>
+      <span>AI聊天</span>
+    </el-menu-item>
+    <el-menu-item index="/404">
+      <el-icon><setting /></el-icon>
+      <span>未开发</span>
+    </el-menu-item>
+  </el-menu>
+</template>
+<script>
+import {Document, Location, Setting , Menu as IconMenu} from "@element-plus/icons-vue";
+
+export default {
+  name:"Aside",
+  components: {Setting, Document, Location,IconMenu}
+}
+
+</script>
+
+<style>
+#Aside{
+  margin-left: 20px;
+}
+</style>

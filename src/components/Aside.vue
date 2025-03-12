@@ -1,25 +1,23 @@
+
+<!-- 左边的导航栏 -->
+
 <template>
   <el-menu
       style="width: 200px;min-height: calc(100vh - 60px)"
-      default-active="2"
+      router
+      :default-active="$route.path"
       class="el-menu-vertical-demo">
-    <el-sub-menu index="1">
-      <template #title>
-        <el-icon><location /></el-icon>
-        <span>Navigator One</span>
-      </template>
-    </el-sub-menu>
-    <el-menu-item index="2">
+    <el-menu-item index="/">
       <el-icon><IconMenu /></el-icon>
-      <span>Navigator Two</span>
+      <span>人员数据管理</span>
     </el-menu-item>
-    <el-menu-item index="3" disabled>
+    <el-menu-item index="/chat" >
       <el-icon><document /></el-icon>
-      <span>Navigator Three</span>
+      <span>AI聊天</span>
     </el-menu-item>
-    <el-menu-item index="4">
+    <el-menu-item index="/404">
       <el-icon><setting /></el-icon>
-      <span>Navigator Four</span>
+      <span>未开发</span>
     </el-menu-item>
   </el-menu>
 </template>

@@ -1,23 +1,29 @@
 <template>
-  <div>
-    <Header />
-    <div style="display: flex">
-       <Aside />
-       <Home style="padding-top: 10px;padding-left: 10px;padding-right: 30px"/>
-    </div>
-  </div>
+  <el-container>
+    <el-header>
+      <Header />
+    </el-header>
+    <el-container>
+      <el-aside>
+      <div style="display: flex">
+        <Aside />
+      </div>
+      </el-aside>
+      <router-view></router-view>
+    </el-container>
+    <!--Home style="padding-top: 10px;padding-left: 10px;padding-right: 30px"/-->
+  </el-container>
 </template>
 
 <script>
 
 import Header from "@/components/Header.vue";
 import Aside from "@/components/Aside.vue";
-import Home from "@/components/Home.vue";
+
 
 export default {
   name: 'Layout',
   components: {
-    Home,
     Header,Aside,
   },
   setup() {
