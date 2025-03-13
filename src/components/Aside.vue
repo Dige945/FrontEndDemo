@@ -15,6 +15,10 @@
       <el-icon><document /></el-icon>
       <span>AI聊天</span>
     </el-menu-item>
+    <el-menu-item index="/chat" >
+      <el-icon><document /></el-icon>
+      <span>请点击我:p</span>
+    </el-menu-item>
     <el-menu-item index="/404">
       <el-icon><setting /></el-icon>
       <span>未开发</span>
