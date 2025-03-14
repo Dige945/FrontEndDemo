@@ -1,5 +1,5 @@
 <template>
-  <div class="chat-container">
+  <div class="chat-container" style="width: 1000px;height: 600px">
     <div class="chat-box">
       <div class="messages" ref="messageContainer">
         <div v-for="(message, index) in messages" :key="index"
