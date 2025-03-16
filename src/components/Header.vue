@@ -1,6 +1,6 @@
 <template>
   <div style="height: 50px;line-height: 50px;border-bottom: 1px solid #ccc;display: flex;margin-top: 0">
-    <div style="width: 100px;padding-left: 0px;font-weight: bolder;color: #42b983">后台管理</div>
+    <div style="width: 100px;padding-left: 0px;font-weight: bolder;color: #42b983">大米集团</div>
     <div style="flex: 1"></div>
     <el-dropdown style="border: none;font-weight: bolder;line-height: 50px;padding-right: 20px;outline: none">
     <span class="el-dropdown-link">
